@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crear viaje</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div id="container-data">
+    <ion-item>
+      <ion-label style="text-align: center;" position="floating">Origen</ion-label>
+      <ion-input [(ngModel)]="trip.origen" type="text" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;" position="floating">Destino</ion-label>
+      <ion-input [(ngModel)]="trip.destino" type="text" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;" position="floating">Hora de salida</ion-label>
+      <ion-input [(ngModel)]="trip.hora" type="time" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;" position="floating">Costo</ion-label>
+      <ion-input [(ngModel)]="trip.costo" type="number" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label style="text-align: center;" position="floating">Cupo</ion-label>
+      <ion-input [(ngModel)]="trip.cupo" type="number" clearInput></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label style="margin: 5px;" position="stacked" >Imagen vehiculo</ion-label>
+      <ion-input [(ngModel)]="trip.auto" type="file"></ion-input>
+    </ion-item>
+  </div>
+
+  <div style="margin-inline: 10px; margin-top: 30px; " id= "container-button">
+    <ion-button shape="round" color="warning" expand="block" (click)="btnSaveTrip()">Guardar viaje</ion-button>
+  </div>
+</ion-content>

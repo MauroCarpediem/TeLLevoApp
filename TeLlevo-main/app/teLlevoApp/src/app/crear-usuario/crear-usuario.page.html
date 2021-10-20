@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crear usuario</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-content>
+  <div style = "padding: 20px" id= "container-data-user">
+    <ion-item>
+
+      <ion-label style="text-align: center;"  position="floating">Ingresa nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="USUARIONUEVO.nombre" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="text-align: center;"  position="floating">Ingresa apellido</ion-label>
+      <ion-input type="text" [(ngModel)]="USUARIONUEVO.apellido" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="text-align: center;"  position="floating">Ingresa email</ion-label>
+      <ion-input type="email" [(ngModel)]="USUARIONUEVO.email" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="text-align: center;"  position="floating">Ingresa nombre de usuario</ion-label>
+      <ion-input type="text" [(ngModel)]="USUARIONUEVO.user" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="text-align: center;"  position="floating">Ingresa contraseña</ion-label>
+      <ion-input type="text" [(ngModel)]="USUARIONUEVO.pass1" clearInput></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label style="text-align: center;"  position="floating">Re ingrese contraseña</ion-label>
+      <ion-input type="text" [(ngModel)]="USUARIONUEVO.pass2" clearInput></ion-input>
+    </ion-item>
+
+    
+    
+
+  </div>
+
+  <div id="container-button-res" style = "padding: 20px" >
+    <ion-button color="warning" shape="round"  size="medium" expand="block" (click)="btnCrearcuenta()">Crear Cuenta</ion-button>
+
+  </div>
+
+</ion-content>

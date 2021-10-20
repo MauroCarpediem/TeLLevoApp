@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="login"></ion-back-button>
+    </ion-buttons>
+    <ion-title>restablecer</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div style = "margin-top: 30%;" id= "container-data-res">
+
+    <ion-input style="text-align: center;" [(ngModel)]="RESETPASS.user" type="text"  placeholder="usuario"></ion-input>
+    <ion-input style="text-align: center;" [(ngModel)]="RESETPASS.pass1" type="text" placeholder="Nueva Contraseña"></ion-input>
+    <ion-input style="text-align: center;" [(ngModel)]="RESETPASS.pass2" type="text" placeholder="Repite Nueva Contraseña"></ion-input>
+
+  </div>
+
+  <div id="container-button-res">
+    <ion-button color="warning" style = "margin-top: 40%;" shape="round"  size="medium" expand="block" (click)="btnCambiarPass()">Restablecer</ion-button>
+  </div>
+
+
+  <!-- 
+  <div>
+    <p> usuario : {{USERVALIDO.user}}</p>
+    <p> clave : {{USERVALIDO.pass}}</p>
+  </div>
+  -->
+</ion-content>
+
+

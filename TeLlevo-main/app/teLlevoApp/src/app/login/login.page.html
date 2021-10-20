@@ -1,0 +1,42 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      TeLLevo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">TeLLevo</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div style = "margin-top: 30%;" id= "container-user">
+    <ion-input style="text-align: center;" type="text" [(ngModel)]="login.usuario" placeholder="Usuario"></ion-input>
+    <ion-input style="text-align: center;" type="password" [(ngModel)]="login.password"   placeholder="Clave"></ion-input>
+  </div>
+    
+  <div id= "container-buttom">
+    <ion-button color="warning" style = "margin-top: 40%;" shape="round"  size="medium" expand="block" (click)="btningresar()"  >INGRESAR</ion-button>
+    <ion-button color="warning" fill="outline" size="small" expand= "block" (click)="btnRestablecer()" >RESTABLECER CLAVE</ion-button>
+    <ion-button color="warning" fill="outline" size="small" expand= "block" (click)="btnNewUser()" >CREAR CUENTA</ion-button>
+  </div>
+  
+
+<!--
+  <div>
+    <p>USUARIO VALIDO</p>
+
+      <p> usuario : {{USERVALIDO.user}}</p>
+      <p> clave : {{USERVALIDO.pass}}</p>
+  </div>
+
+  <div>
+    <p>USUARIO NUEVO</p>
+    <p>usuario: {{USUARIONUEVO.user}} </p>
+    <p>clave: {{USUARIONUEVO.pass}}</p>
+  </div>
+-->
+</ion-content>
